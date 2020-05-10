@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="ISI IKI "
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:hint="Nama"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/inNpm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:hint="NPM"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/inJK"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:text="Jenis Kelamin "
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />/>
+
+        <RadioGroup
+            android:id="@+id/rbgrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="190dp">
+
+            <RadioButton
+                android:id="@+id/laki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/perempuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textColor="@android:color/white"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/inJabatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="250dp"
+            android:text="Jabatan"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rbgrup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="250dp"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/direktur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Direktur"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/programer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programer"
+                android:textColor="@android:color/white"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbgrup1"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/pink"
+            android:text="Cancel"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancel"
+            android:layout_alignBottom="@+id/btnCancel"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:background="@color/pink"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>
